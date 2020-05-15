@@ -36,8 +36,9 @@ class QuizQuestion extends Component {
             )}
           </ul>
         </section>
-        if(this.state.incorrectAnswer)
-        {<p className="error">Sorry, that's not right</p>}
+        {this.state.incorrectAnswer ? (
+          <p className="error">Sorry, that's not right</p>
+        ) : null}
       </main>
     );
   }
